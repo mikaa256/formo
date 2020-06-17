@@ -1,10 +1,16 @@
-body {
+* {
+	box-sizing: border-box;
 	font-family: "Century Gothic", sans-serif;
+}
+body {
 	font-weight: normal;
-	font-size:14px;
+	font-size:18px;
 	margin: 0;
 }
 .header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background: url("../img/Frame_1.png")no-repeat center center;
 	background-size: cover;
 	width: 100%;
@@ -13,22 +19,7 @@ body {
 .logo {
 	width: 400px;
 	height: 110px;
-	margin:240px 610px 266px 540px;
-}
-.banner{
-	font-size: 18px;
-	font-weight: lighter;
-	margin-top: -240px;
-	margin-left: 520px;
-	margin-right: 470px;
-	line-height: 1.6;
-}
-.menu {
-	list-style:none;
-	display: flex;
-	color: #FFFFFF;
-	left: 100px;
-	align-items: center;
+	margin:240px 0 26px;
 }
 .menu__item {
 	margin-left: 140px;
@@ -41,89 +32,86 @@ body {
 	text-decoration: none;
 	color: #FFFFFF;
 }
-.btn {
-	font-family: "Century Gothic", sans-serif;
+.banner{
+	font-size: 18px;
+	font-weight: lighter;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.6;
+}
+.navigation {
+	padding-top: 59px;
+}
+.menu {
+	list-style:none;
+	display: flex;
+	color: #FFFFFF;
+	left: 100px;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	flex-wrap: wrap;
+}
+.menu__item {
+	margin: 10px 70px;
+}
+.menu_link {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.button {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 75px;
 	text-align: center;
-	text-decoration: none;
-	color: #FFFFFF;
-	display: inline-block;
-	position: absolute;
 	width: 296px;
-	height: 80px;
-	left: 590px;
-	top: 550px;
 	background: #427B39;
 	box-shadow: 7px 5px 8px rgba(0, 0, 0, 0.25);
 	border-radius: 45px;
 }
+
+.button a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
 /*БЛОК О НАС*/
 .content {
-	font-family: "Century Gothic", sans-serif;
 	width: 100%;
 }
 
-.about_header p {
-
-	margin-top: 30px;
+.about_header  {
 	padding: 0;
+	margin-top: 30px;
 	width: 100%;
 	font-size: 28px;
 	position: relative;
 	font-weight: bold;
 	text-align: center;
-}
-.about_element_left {
-	position: relative;
-	font-size: 18px;
-	display: inline-block;
-	border: 1px solid black;
 
 }
-.about {
-	margin-top: 60px;
-	display: inline;
-	margin-left: 310px;
+.about_elements {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/*max-width: 1200px;
+	margin-left: 150px;*/
 }
-.place_left h2 {
-	position: relative;
-	margin-top: 20px;
-	margin-left:190px;
-}
-.place_left p {
-	font-size: 19px;
-	margin-top: 30px;
-	margin-bottom: -6px;
-	margin-left: 120px;
-}
-/*НАМ ТРИ ГОДА*/
-.about_element_right {
-    position: relative;
-    margin-top: 20px;
-    font-size: 18px;
-    border: 1px solid black;
-    display: inline-block;
-	width: 500px;
-	height: 400px;
 
-}
-.years {
-	margin-top: 40px;
-	display: inline;
-	margin-left: 500px;
-}
-.place_right h2 {
-	position: relative;
-	margin-top: 20px;
-	margin-left: 300px;
+.about_element-header {
+	font-size: 24px;
 	text-align: center;
 }
-.place_right p {
-	font-size: 19px;
-	margin-top: 10px;
-	margin-bottom: -6px;
-	margin-left: 320px;
-	text-align: center;
+.about_element {
+	margin: 0 40px 60px;
+	width: 100%;
+    max-width: 350px;
 }
+.about_icon {
+	width: 60px;
+	margin: 60px auto 0;
+}
+
